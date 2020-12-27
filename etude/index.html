@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>ETUDE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/javascript.js"></script>
+    <script type="text/javascript" src="js/jquery.innerfade.js"></script>
+    <script type="text/javascript" src="js/slidebanner.js"></script>
+
+    <script>
+        $(document).ready(
+            function() {
+                $('.noticelist').innerfade({
+                    animationtype: 'slide',
+                    speed: 900,
+                    timeout: 2000,
+                    type: 'sequence',
+                    containerheight: '30px'
+                });
+
+                $('.lips li').eq(0).mouseover(function() {
+                    $('.contents .video div').css('background-image', 'url(images/mousse_06.jpg)');
+                });
+                $('.lips li').eq(1).mouseover(function() {
+                    $('.contents .video div').css('background-image', 'url(images/mousse_03.jpg)');
+                });
+                $('.lips li').eq(2).mouseover(function() {
+                    $('.contents .video div').css('background-image', 'url(images/mousse_05.jpg)');
+                });
+                $('.lips li').eq(3).mouseover(function() {
+                    $('.contents .video div').css('background-image', 'url(images/mousse_04.jpg)');
+                });
+
+                $('.lips li').eq(4).mouseover(function() {
+                    $('.contents .video div').css('background-image', 'url(images/mousse_04.jpg)');
+                });
+
+                $('.lips li').eq(5).mouseover(function() {
+                    $('.contents .video div').css('background-image', 'url(images/mousse_02.jpg)');
+                });
+                $('.mobilemeun').click(function() {
+                    $('.mo_gnb, .mo_bg').animate({
+                        left: 0
+                    }, 1000);
+                    $('.x').show();
+                });
+                $('.x').click(function() {
+                    $('.mo_gnb').animate({
+                        left: '-80%'
+                    }, 1000);
+                    $('.mo_bg').animate({
+                        left: '-100%'
+                    }, 1000);
+                    $('.mobilemeun').show();
+                    $(this).hide();
+                });
+
+            });
+    </script>
+
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="mo_bg"></div>
+        <div class="mo_gn">
+            <nav class="mo_gnb">
+                <p class="x"><img src="images/gnb.gif" alt="x표"></p>
+                <ul>
+                    <li><a href="#">카테고리</a></li>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">신제품</a></li>
+                    <li><a href="#">뷰티라이프</a></li>
+                    <li><a href="#">ch.에뛰드</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">브랜드</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobil01"><a href="#"><img src="images/mobile_05.gif"></a></div>
+        <div class="mobilemeun"><a href="#"><img src="images/mobile_03.gif"></a></div>
+        <p class="skipNavi blind"><a href="#container">본문바로가기</a></p>
+
+        <header>
+
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="에뛰드"></a></h1>
+
+            <nav class="gnb">
+                <h2 class="blind">대메뉴</h2>
+                <ul>
+                    <li class="cd"><a href="#">카테고리 ▼</a></li>
+
+                    <li><a href="best.html">베스트</a></li>
+                    <li><a href="new.html">신제품</a></li>
+                    <li><a href="beautylife.html">뷰티라이프</a></li>
+                    <li><a href="chetude.html">CH.에뛰드</a></li>
+                    <li><a href="event.html">이벤트</a></li>
+                    <li><a href="brand.html">브랜드</a></li>
+                </ul>
+            </nav>
+            <div class="top">
+                <nav class="util">
+                    <h2 class="blind">부메뉴</h2>
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">고객센터</a></li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="lang">
+                    <H2 class="blind">언어선택</H2>
+                    <select>
+                    <option>ENGLISH</option>
+                    <option>中國語</option>                   <option>日本語</option>
+                </select>
+                </div>
+                <div class="cat"><img src="images/cd.png" alt="카테고리"></div>
+            </div>
+        </header>
+        <div id="container">
+            <div class="visual">
+                <div class="brandVisual">
+                    <ul>
+                        <li class="visual_0"><a href="#">디어마이에나멜립스톡</a></li>
+                        <li class="visual_1"><a href="#">애니쿠션올데이퍼펙트</a></li>
+                        <li class="visual_2"><a href="#">프리즈임아이즈3구</a></li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+  <ul class="buttonList">
+           <li class="on"><a href="#">버튼1</a></li>
+            <li><a href="#">버튼2</a></li>
+           <li><a href="#">버튼3</a></li>
+      </ul>
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="new">
+                <h3 class="blind">신제품</h3>
+                <ul>
+                    <li><a href="new.html"><img src="images/pd.jpg" alt="파운데이션"></a></li>
+                    <li><a href="new.html"><img src="images/mousse_01.jpg" alt="립무스"></a></li>
+                    <li><a href="new.html"><img src="images/tint.jpg"  alt="틴트"></a></li>
+                    <li><a href="new.html"><img src="images/ck.jpg" alt="치크"></a></li>
+                </ul>
+            </div>
+
+            <div class="event">
+                <p><a href="event.html"><img src="images/event.jpg" alt="립스틱전제품1+1"></a></p>
+                <h3><img src="images/best_01.gif" alt="베스트컬러"></h3>
+                <ul>
+
+                    <li><a href="best.html"> <img src="images/sd_01.gif" alt="솔방울"></a></li>
+                    <li><a href="best.html"> <img src="images/rip.jpg" alt="쉬폰베이지"></a></li>
+                </ul>
+
+            </div>
+
+            <div class="best_3">
+                <h4 class="blind">베스트</h4>
+                <ul>
+                    <li><a href="new.html"><img src="images/maple.jpg" alt="파운데이션"></a></li>
+                    <li><a href="new.html"><img src="images/lipoil.jpg" alt="립무스"></a></li>
+                    <li><a href="new.html"><img src="images/lovey.jpg"  alt="틴트"></a></li>
+                    <li><a href="new.html"><img src="images/ch.jpg" alt="치크"></a></li>
+                    <li><a href="new.html"><img src="images/airms.jpg" alt="파운데이션"></a></li>
+                    <li><a href="new.html"><img src="images/ddtint.jpg" alt="립무스"></a></li>
+                    <li><a href="new.html"><img src="images/ac.jpg"  alt="틴트"></a></li>
+                    <li><a href="new.html"><img src="images/lips.jpg" alt="치크"></a></li>
+                </ul>
+            </div>
+            <p class="tip"><a href="beautylife.html"> <img src="images/tip_34.gif" alt="뷰티팁"></a></p>
+            <div class="mobilbest">
+                <ul>
+                    <li><img src="images/mobile_10.jpg" alt="룩앳마이아이즈"></li>
+                    <li><img src="images/mobile_13.jpg" alt="애니쿠션올데이퍼펙트"></li>
+                    <li><img src="images/mobile_15.jpg" alt="디어달링워터젤틴트"></li>
+                </ul>
+            </div>
+            <div class="video">
+                <video src="images/live.mp4" width="907" height="507" controls poster="images/video_36.jpg"></video>
+                <div>
+                    <h3>컬러 인 리퀴드 립스 무스</h3>
+                    <ul class="lips">
+
+                        <li><a href="#"><img src="images/color_41.gif" alt="말캉오렌지"></a></li>
+                        <li><a href="#"><img src="images/color_47.gif" alt="말린딸기시럽"></a></li>
+                        <li><a href="#"><img src="images/color_49.gif" alt="루비레드자몽"></a></li>
+                        <li><a href="#"><img src="images/color_51.gif" alt="톡톡석류알"></a></li>
+                        <li><a href="#"><img src="images/color_53.gif" alt="복분자파워"></a></li>
+                        <li><a href="#"><img src="images/color_56.gif" alt="체리버찌"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="mobil04">
+                <ul>
+                    <li><a href="#"><img src="images/mobile_23.gif" alt="무료샘플신청"></a></li>
+                    <li><a href="#"><img src="images/mobile_25.gif" alt="출석체크"></a></li>
+                    <li><a href="#"><img src="images/mobile_27.gif" alt="구매금액사은품"></a></li>
+                    <li><a href="#"><img src="images/mobile_33.gif" alt="포인트"></a></li>
+                    <li><a href="#"><img src="images/mobile_35.gif" alt="뷰티테스트신청"></a></li>
+                    <li><a href="#"><img src="images/mobile_37.gif" alt="매장안내"></a></li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="notice">
+                    <h3>공지사항</h3>
+                    <ul class="noticelist">
+                        <li><a href="#">[안내] 사이트 서비스 점검 안내</a></li>
+                        <li class="#"><a href="#">[안내] 카카오 페이 중단</a></li>
+                        <li class="#"><a href="#">[공지] 에뛰드 이용약관 변경</a></li>
+                    </ul>
+                    <p><a href="#"><img src="images/p_1.gif" alt="더보기"></a></p>
+                </div>
+
+                <div class="store">
+                    <h3><a href="#"><img src="images/takeout.gif" alt="테이크아웃"></a></h3>
+                    <p><a href="#"><img src="images/p_2.gif" alt="더보기"></a></p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <nav>
+                <h3 class="blind">서비스약관</h3>
+                <ul>
+                    <li class="#"><a href="#">서비스 이용약관</a></li>
+                    <li class="#"><a href="#">개인정보처리방침</a></li>
+                    <li class="#"><a href="#">뷰티포인트통합회원안내</a></li>
+                    <li class="#"><a href="#">채용공고</a></li>
+                    <li class="#"><a href="#">매장개설문의</a></li>
+                </ul>
+            </nav>
+            <div class="sns">
+                <h3 class="blind">sns아이콘</h3>
+                <ul>
+                    <li><a href="#"> <img src="images/sns_63.gif" alt="트위터"></a></li>
+                    <li><a href="#"> <img src="images/sns_65.gif" alt="인스타"></a></li>
+                    <li><a href="#"> <img src="images/sns_67.gif" alt="페이스북"></a></li>
+                    <li><a href="#"> <img src="images/sns_69.gif" alt="유튜브"></a></li>
+                    <li><a href="#"> <img src="images/sns_71.gif" alt="블로그"></a></li>
+                </ul>
+            </div>
+            <div class="mobilesns">
+                <ul>
+                    <li><a href="#"><img src="images/mobile_sns_53.gif" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="images/mobile_sns_45.gif" alt="인스타"></a></li>
+                    <li><a href="#"><img src="images/mobile_sns_47.gif" alt="트위터"></a></li>
+                    <li><a href="#"><img src="images/mobile_sns_42.gif" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="images/mobile_sns_50.gif" alt="블로그"></a></li>
+                </ul>
+            </div>
+            <p> <a href="index.html"> <img src="images/logo_01.jpg" alt="에뛰드로고"></a></p>
+            <address>
+                        이 사이트는 포트폴리오 용으로 만들어진 가상 사이트입니다.<br> 사이트에서 사용된 사진과 내용의 저작권은 에뛰드 하우스에 있습니다.<br> Copyrightⓒ 2018 김지선, All Rights Reserved
+            </address>
+        </footer>
+    </div>
+</body></html>

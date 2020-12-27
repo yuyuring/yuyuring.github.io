@@ -1,0 +1,188 @@
+@charset "utf-8";
+@import url(reset.css);
+
+body{
+  height: auto;
+}
+
+header .gnb ul, header .top, .contents, #container, footer {width: 100%;}
+header .top {position: relative;}
+header .logo {text-align: center;}
+header .gnb,header .gnb ul {background-color: #eb5e92; text-align: center;}
+header .gnb li {display: inline; padding-right: 80px;}
+header .cat {position: absolute;z-index: 30;top:0; left: 0;display: none;}
+header .gnb li:first-child {padding-left: 20px; padding-right: 210px; position:absolute;left:0;}
+header .gnb li a {color:#fff; font-size: 16px; line-height: 58px; font-weight: bold;}
+header .lang {position: absolute; left: 50px; top: -170px;}
+header .lang select {padding: 3px; width: 125px; border: 1px solid #eee;}
+header .util {position: absolute; right: 50px; top: -170px;}
+header .util li {display:inline; padding-left: 10px; font-weight: 500px;}
+header .util li a{color: #eb5e92;}
+
+        .visual {position: relative;}
+
+
+        .brandVisual {
+            width: 100%;
+            position: relative;
+            height: 700px;
+            overflow: hidden;
+
+        }
+        .brandVisual li{
+            position: absolute;
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+        .brandVisual .visual_0{left: 0;
+            background-image: url(images/main_01.jpg);}
+        .brandVisual .visual_1{left: 100%;
+            background-image: url(images/main_02.jpg);}
+        .brandVisual .visual_2{left: 200%;
+            background-image: url(images/main_03.jpg);}
+        .brandVisual li a {display: block; height: 700px; text-indent: -9999px;}
+        .buttonList {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;}
+        .buttonList li{float: left; width: 14px; margin-right: 5px;}
+        .buttonList li a {display: block; text-indent: -9999px; background-image: url(images/btnVisual.png);background-position: 0 -16px; height: 15px; background-repeat: no-repeat; }
+        .buttonList .on a {background-position: 0 0;}
+.contents{text-align: center;}
+.contents > * {width:1200px; margin:0 auto;}
+.contents .new { solid #aaa;margin-top: 30px; padding: 15px 0 30px;  padding-top: 100px; padding-bottom: 140px;}
+.contents .new ul {overflow: hidden; padding-left: 40px;}
+.contents .new li {float: left; padding-right: 30px;}
+.contents .event {overflow: hidden; padding-bottom: 40px;}
+.contents .event p {float: left;  padding-bottom: 100px;}
+.contents .event li{float: left; padding: 20px 0 0 10px;}
+.contents .best_3 li {float: left; padding-right: 30px;}
+.contents .tip {overflow: hidden; padding-top: 100px;}
+.contents .video {padding: 40px 0; overflow: hidden;  padding-top: 100px; padding-bottom: 80px;}
+.contents .video video {float: left;}
+.contents .video div {float: left; padding: 410px 0 20px; margin-left: 30px; background-image: url(images/mousse_02.jpg);background-repeat: no-repeat; background-position: 50% 30%; position: relative;}
+.contents .video h3 {position: absolute; bottom: 0;left: 40px;}
+.contents .video li{float: left;}
+.contents .bottom {overflow: hidden; padding: 12px 0 0;}
+.contents .bottom div {width: 50%;height: 75px; float: left; box-sizing: border-box; padding-top: 15px; }
+.contents .bottom .notice {position: relative;background-color: #666465; border-right:  1px solod #fff;}
+.contents .bottom .store {background-color: #c3c2c0; }
+.contents .bottom h3, .contents .bottom ul {float: left;}
+.contents .bottom p {float: right;padding-right: 20px;padding-top: 5px;}
+.contents .bottom .notice h3 {color: #fff; font-size: 18px; font-weight: normal; padding: 12px 15px 0 ;}
+.contents .bottom .notice li a{color: #fff; }
+
+.contents .bottom .notice p {position: absolute; left: 550px; }
+.contents .bottom .store h3 {padding-left: 200px;}
+.bottom .notice .noticelist {width: 100%; left: 100px; bottom: 15px;}
+footer {text-align: center; position: relative;;bottom: 0;background-color: #dcdcdc;padding: 70px 0 25px;}
+footer address {font-style: normal; line-height: 18px;}
+footer li {display: inline; font-size: 14px;}
+footer nav li {padding-right: 20px; border-right: 2px solid #999; margin-right: 20px;}
+footer nav li:last-child{border-right: none;}
+footer nav {position: absolute; top: 20px; left: 30px;}
+footer .sns {position: absolute; top: 10px; right: 20px;}
+footer p {margin: 20px;}
+/*best*/
+.contents .color{overflow: hidden; background-color: #f29c9f; height: 115px;}
+.contents .color .best {display: inline; color: #fff; padding-left: 450px; line-height: 105px; font-size: 48px;}
+.contents .color li {float: left; padding-top: 20px; padding-bottom: 10px; }
+.contents .best {overflow: hidden; padding-top: 100px;position: relative;}
+.contents .best h5 {float: left; font-size: 24px; color: #444343; font-weight: bold;  }
+.contents .best .realtime {position: absolute; width: 700px; text-align: center; top: 60px;}
+.contents .best .colorbest {position: absolute; width: 1700px; text-align: center; top: 60px;}
+.contents .best ul{border-top: 2px solid #c9c9cc; padding-top: 20px;border-bottom: 2px solid #c9c9cc; padding-bottom: 20px; }
+.contents .best li{display: inline;text-align: center;padding-right: 10px; border-right: 2px solid #999; margin-right: 10px; }
+.contents .best li:last-child{border-right: none;}
+.contents .list  {padding:10px 0 20px; }
+.contents .list li{display: inline; padding-left: 50px;padding-bottom: 50px;}
+/*brand*/
+.contents .brand {padding-top: 20px; height: 612px; position: relative;}
+.contents .brand p {background-image: url(images/sub3_05.jpg),url(images/sub3_07.gif);
+ background-position: 100% 0%,15% 30%;
+ background-repeat: no-repeat; height: 606px; padding: 350px 20px 80px; box-sizing: border-box; font-size: 14px; line-height: 30px; text-align:center; padding-right: 700px;text-align: center}
+.contents .trendy {background-image: url(images/sub3_10.jpg);background-position: 0% 100% ; background-repeat: no-repeat; height: 688px;text-align:right;;  line-height: 30px;font-size: 14px;}
+.contents .trendy p:nth-child(1) {font-size: 30px; font-weight: bold; color: #444243; padding-bottom: 40px; padding-top: 100px;}
+.contents .trendy span {font-size: 30px; font-weight: bold; color: #ff66a7;}
+.contents .trendy p:nth-child(3) {padding-top: 50px;}
+.contents .global {padding: 450px 0 0px; background-image: url(images/sub3_13.jpg), url(images/sub3_15.jpg);background-position: 0% 0% , 100% 0%; background-repeat: no-repeat; height:150px;
+margin-top: 30px;}
+.contents .global h4 {font-size: 30px; width: 700px;padding-bottom: 20px;padding-left: 20px;}
+.contents .global h4 span {color:#ff66a7;}
+.contents .global ul {padding-left: 20px;width: 700px;}
+.contents .global li {display: inline; padding-right: 10px; border-right: 2px solid #999; margin-right: 10px; font-size: 14px;line-height: 25px;}
+.contents .global li:nth-child(9) {border-right: none;}
+.contents .global li:last-child {border-right: none;}
+
+/*new*/
+.new .contents h3 {height: 850px; padding-bottom: 10px;}
+.new .contents .burgundy {text-align: center;}
+.new .contents .deardarling { position: relative; text-align: center; height: 610px;}
+.new .contents .foundation h4 {position: absolute; padding: 22px 30px; height: 550px;}
+.new .contents  .foundation ul {padding-left: 520px;padding-top: 20px}
+.new .contents  .foundation li {display: inline; padding-left: 10px}
+.new .contents  .foundation .comment {background-image: url(images/sub_22.gif);background-repeat: no-repeat; background-position: 96% 30%; padding-left: 520px; padding-top: 100px; font-size: 20px; height: 229px;line-height: 28px;}
+.new .contents .deardarling {display: block; position: relative; text-align: center; margin-top: 100px;}
+.new .contents .deardarling h4 {padding-bottom: 100px; padding-right: 540px;}
+.new .contents .deardarling  li:nth-child(1) {position: absolute; top: 0px; left: 875px;}
+.new .contents .deardarling  li:nth-child(2) {position: absolute; top: 276px; left: 875px;}
+
+/**/
+.mobilesns, .mobilemeun, .mobilemeunsp, .mobil01, .mobil04 , .mobilbest li, .mo_gn {display: none;}
+@media screen and (max-width: 640px){
+    header .gnb ul, .contents, #container, footer, .brandVisual .visual_0,.brandVisual .visual_1,.brandVisual .visual_2, .buttonList, .tip img, .contents .bottom .notice {width: 100%;}
+
+.mobilesns, .mobilemeun, .mobilemeunsp, .mobil01, .mobil04,.tip, .mobilbest li, .mo_gn {display: block;}
+.gnb, .contents .new li:nth-child(1),.new li:nth-child(2), .video, .event, .play, .store, footer nav li, .sns, footer p,  header .top,.x {display: none;}
+address, #container .tip img, mobilemeunsp, .bottom .notice, .mobilemeunsp img, .lang select,.mobil04 li img,.contents .bottom p img, .mobil01 img, .mobilemeun img,.tip {width: 100%;}
+header {position: relative;}
+header .logo img{width: 20%}
+
+.mobil01 { width: 14%; position: absolute; right: 2vw;top: 1.8%;}
+    .mobil01 img {width: 100%;}
+.mobilemeun { width: 12%; position: absolute;top:3%; left: 2vw;z-index: 20}
+    .mobilemeun img {width: 100%; }
+
+    .visual .brandVisual {padding-top: -100px;}
+    .mo_gnb li a {font-size: 18px; color: #fff;
+            line-height: 3;
+            width: 100%;
+            text-decoration: none;font-weight: bold;}
+       .mo_gnb {z-index: 50;
+            height: 100%;
+            background-color: #501029;
+            width: 50%;
+            position: fixed;
+            top: 0;
+           left: -50%;text-align: right;padding-right: 5vw;
+    padding-top: 10vw;box-sizing: border-box;}
+         .mo_bg {z-index: 50;
+            height: 100%;
+            background-color: rgba(38, 15, 23, 0.5);
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;}
+    .mo_gn .mo_gnb .x {position: absolute; top:3vw; left: 105%;}
+    .contents .new li{width: 50%; padding-right: 0px;}
+    .contents .new li img{width: 90%; }
+    .contents .tip {padding-bottom: 10px;}
+    .mobil04 {overflow: hidden;background-color: #eee; background-size: 960px 320px;padding: 5px 8px;}
+    .mobil04 li{float: left; width: 31.5%;padding: 3px;}
+  .contents .bottom .notice {background-color: #666465; border-right:  1px solid #fff;}
+  .contents .bottom .notice h3 {width: 30%; padding-top: 3vw}
+    .bottom .notice .noticelist {width: 60%; left: -10%;top: 3.5vw;}
+    .contents .bottom p {float: left; padding-left: 45vw;top: 4.5vw;}
+    .mobilbest {overflow: hidden;}
+    .mobilbest li{float: left; width: 33.3%; padding-bottom: 10px;}
+    .mobilbest li img{width: 100%;}
+    .mobilemeunsp {padding-bottom: 5%;}
+    .contents .bottom .notice p {left: 45%;}
+    .contents .new {border: none;}
+    .mobilesns img{width: 9%;}
+.mobilesns li{width: 70%;}
+.mobilesns li img {margin-bottom: 30px;}
+            .brandVisual {width: 100%; height: 46vw}
+            .brandVisua li a{height: 46vw;}
+            .brandVisual li {background-size: 100% auto; background-repeat: no-repeat;}
+            .buttonList {width: 25vw;bottom: 3vw;left: 45%;}
