@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import url(reset.css);
+
+header>div, .contents,footer {width: 1200px; margin: 0 auto;}
+.main {background-image: url(images/puma_13.gif);background-position: calc(50% + 681px) 1373px;background-repeat: no-repeat;}
+header {background-color: #e1e1e1;}
+header>div {position: relative;}
+header .logo {text-align: center;padding-top: 20px;}
+header .gnb {text-align: center;padding-top: 30px;padding-bottom: 15px;}
+header .gnb li {display: inline; padding-right: 80px;font-size: 18px; font-weight: bold; }
+header .gnb li a{color: #4b4a4a;}
+header .util {position: absolute; top: 0;padding-top: 40px;right: 0;font-size: 14px;font-weight: bold}
+header .util li {display:inline; padding-left: 30px;}
+header .util a {color: #7e7e7e;}
+.visual {position: relative; height: 615px;}
+        
+        
+.brandVisual {
+            width: 100%;
+            position: relative;
+            height: 615px;
+            overflow: hidden;   
+        }
+ .brandVisual li{
+            position: absolute; 
+            width: 100%;
+            background-position: center center;
+     height: 615px;}
+.brandVisual .visual_0{left: 0;
+            background-image: url(images/puma_main01.jpg);}
+.brandVisual .visual_1{left: 100%;
+            background-image: url(images/puma_main02.jpg);}
+.brandVisual .visual_2{left: 200%;
+            background-image: url(images/puma_main03.jpg);}
+.brandVisual li a {display: block; height: 615px; text-indent: -9999px;}
+.buttonList {
+            position: absolute; 
+            bottom: 50px;
+            left: 50%;}
+        .buttonList li{float: left; width: 14px; margin-right: 5px;}
+        .buttonList li a {display: block; text-indent: -9999px; background-image: url(images/btnVisual.png);background-position: 0 -16px; height: 15px; background-repeat: no-repeat; }
+        .buttonList .on a {background-position: 0 0;}
+.contents .bh {margin-top:100px;}
+.contents .cm {position: relative;overflow: hidden;}
+.contents .cm li{float: left;}
+.contents .cm li:nth-child(5){position: absolute; right: 0px;top: 351px;}
+.contents .fen {margin-top:100px; position: relative; height: 450px; }
+.contents .fen .fenty {position: absolute;left: 0; top: 30px;}
+.contents .par {margin-top:100px; position: relative;height: 500px;}
+.contents .par .paralle {position: absolute; left: 0;padding-top: 60px; }
+
+footer {margin-top:150px; text-align: right; position: relative; background-color: #dcdcdc;height: 180px;}
+footer li {display: inline;}
+footer .sns {position: absolute; top: 20px; right: 50px;}
+footer .sns li{padding-right: 10px;}
+footer .puma_lg {position: absolute; left: 40px;top: 40px;}
+footer address {font-style: normal; line-height: 20px; padding-right: 30px; padding-top: 100px;}

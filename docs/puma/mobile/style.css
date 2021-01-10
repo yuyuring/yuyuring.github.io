@@ -1,0 +1,48 @@
+@charset "utf-8";
+@import url(../reset.css);
+header>div, .contents>div,.brandVisual li,footer {width: 100%; margin: 0 auto;}
+header {background-color: #cdcdcd; height: 15vw}
+header .logo {text-align: left; padding-left: 4vw; padding-top: 2vw;}
+header .logo img {width: 18%}
+header>p {display: inline;position: absolute; top: 2%; right: 1vw; width: 12%;}
+header p img{width: 100%}
+.brandVisual {border-top: 1vw solid #000;
+            width: 100%;
+            position: relative;
+            height: 44vw;
+            overflow: hidden;   
+        }
+ .brandVisual li{
+            position: absolute; 
+            width: 100%;
+            background-position: center center;
+            height: 44vw;
+             background-repeat: no-repeat;
+     background-size: 100% auto;}
+.brandVisual .visual_0{left: 0;
+            background-image: url(../images/mobile_48.jpg);}
+.brandVisual .visual_1{left: 100%;
+            background-image: url(../images/mobile_38.jpg);}
+.brandVisual .visual_2{left: 200%;
+            background-image: url(../images/mobile_58.jpg);}
+.brandVisual li a {display: block; height: 100%; text-indent: -9999px;}
+.buttonList {
+            position: absolute; 
+            bottom: 50px;
+            left: 50%;}
+        .buttonList li{float: left; width: 14px; margin-right: 5px;}
+        .buttonList li a {display: block; text-indent: -9999px; background-image: url(images/btnVisual.png);background-position: 0 -16px; height: 15px; background-repeat: no-repeat; }
+        .buttonList .on a {background-position: 0 0;}
+
+.contents .now li img,.contents .now h2 img, .contents .rd li img,.contents .jun img, .bts img, .contents .mo_21 img{width: 100%}
+
+.contents .now h2 {padding: 3vw 1vw;width: 100%}
+.contents .now {overflow: hidden; width: 100%}
+.contents .now li {float: left; padding-bottom: 3vw;padding-left: 3%; width: 30%}
+.contents .rd {overflow: hidden; padding: 3vw 0;width: 100%}
+.contents .rd li {float: left;width: 33.3%}
+.contents .jun {padding-top: 3vw;}
+footer {overflow: hidden; background-color: #dcdcdc;height: 18vw;}
+footer .sns {padding-top: 2%;text-align: center;}
+footer .sns li{display: inline;padding-right: 1vw;}
+address {font-style: normal; text-align: center;padding-top: 2%;line-height: 2vw; font-size: 1.5vw}
