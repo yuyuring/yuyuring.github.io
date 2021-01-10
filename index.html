@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="vendors/jquery.fullPage.min.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="vendors/jquery.hcaptions.js"></script>
+  <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+  <script src="vendors/jquery.easings.min.js"></script>
+
+
+  <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+  <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+  <script type="text/javascript" src="vendors/jquery.fullPage.min.js"></script>
+
+  <script src="vendors/jquery.fullpage.extensions.min.js" charset="utf-8"></script>
+<style media="screen">
+body{
+  background: white;
+  padding: 0;
+  margin: 0;
+}
+.section{
+  padding: 0;
+  margin: 0;
+}
+.slide{
+  position: relative;
+}
+.fp-slides{
+  position: absolute;
+  top:0;
+}
+
+img{
+
+            max-width:100%;
+            height:auto;
+}
+    .list {position: relative;display: inline-block; width: 1571px;margin: 0 auto;}
+
+    .list li {list-style: none;float: left; text-align: center; }
+
+.list li img {float: left;margin: 15px; width: 280px;height: 280px;}
+.cap-overlay{
+  background-color: rgba(250, 250, 250, 0.8);
+}
+.cap-overlay .content{
+  padding: 40px;
+    margin-top: 70px;
+  font-weight: 700;
+    text-shadow: 100;
+    color: #000;
+}
+
+</style>
+  </head>
+
+
+  <body>
+    <div id="fullpage">
+		<div class="section" >
+				<div class="slide">
+					  <img src="img/cover.jpg"  alt="">
+				</div>
+		</div>
+
+        <div class="section" >
+				<div class="slide">
+					  <img src="img/sec2.jpg"  alt="">
+				</div>
+		</div>
+		<div class="section"  data-anchor="homepage">
+			<div class="slide">
+					  <img src="img/sec0.jpg"  alt="">
+				</div>
+				<div class="slide" style= "background-image: url('img/sec0_1.jpg');  background-size: cover"  >
+
+                      <a data-toggle="drop-panel" href="#etude" style="display:inline-block;margin-top:100px;">
+                        <img src="img/sec0_11.jpg"   alt=""></a>
+                      <div id="etude" class="cap-overlay hide"style="margin-top: 100px;display: inline-block;">
+                        <div class="content" style="margin: auto;line-height: 1.5;display:block;text-align:center;vertical-align: middle;">
+                          <span style="height:300px;padding-top:300px;display:inline-block; text-align: center;vertical-align: middle;" >
+                          화장품 브랜드 에뛰드 하우스 사이트를 퍼블리싱 하였습니다. <br>
+                          디자인과 퍼플리싱은 100% 자체제작이며 반응형으로 제작되어있습니다.<br>
+                          베스트와 신제품 브랜드 페이지는 클릭하면<br> 각각의 페이지로 이동하게 되어있습니다.
+                          <br>     <br>  <a href="https://yuyuring.github.io/etude/" style="text-decoration:none; font-size:20px; color:#ec5d93;margin-top:30px;"> 에뛰드 포트폴리오 사이트로 이동하기</a>
+                          </span>
+                        </div>
+                      </div>
+
+
+</div>
+<div class="slide" style= "background-image: url('img/sec0_2.jpg');  background-size: cover"  >
+
+              <a data-toggle="drop-panel" href="#gongcha" style="display:inline-block;margin-top:100px;">
+                <img src="img/sec0_21.jpg"   alt=""></a>
+              <div id="gongcha" class="cap-overlay hide"style="margin-top: 100px;display: inline-block;">
+                <div class="content" style="margin: auto;line-height: 1.5;display:block;text-align:center;vertical-align: middle;">
+                  <span style="height:300px;padding-top:300px;display:inline-block; text-align: center;vertical-align: middle;" >
+                글로벌 티 브랜드 공차 사이트를 퍼블리싱 하였습니다. <br>
+                  디자인과 퍼플리싱은 100% 자체제작입니다.<br>
+                  <br>     <br>  <a href="https://yuyuring.github.io/gongcha/" style="text-decoration:none; font-size:20px; color:#9b3133;margin-top:30px;"> 공차 포트폴리오 사이트로 이동하기</a>
+                  </span>
+                </div>
+              </div>
+
+
+</div>
+<div class="slide" style= "background-image: url('img/sec0_3.jpg');  background-size: cover"  >
+
+              <a data-toggle="drop-panel" href="#puma" style="display:inline-block;margin-top:100px;">
+                <img src="img/sec0_31.jpg"   alt=""></a>
+              <div id="puma" class="cap-overlay hide"style="margin-top: 100px;display: inline-block;">
+                <div class="content" style="margin: auto;line-height: 1.5;display:block;text-align:center;vertical-align: middle;">
+                  <span style="height:300px;padding-top:300px;display:inline-block; text-align: center;vertical-align: middle;" >
+                  스포츠 브랜드 푸마 사이트를 퍼블리싱 하였습니다. <br>
+                  디자인과 퍼플리싱은 100% 자체제작입니다.<br>
+                  <br>     <br>  <a href="https://yuyuring.github.io/gongcha/" style="text-decoration:none; font-size:20px; color:#000;margin-top:30px;"> 푸마 포트폴리오 사이트로 이동하기</a>
+                  </span>
+                </div>
+              </div>
+
+
+</div>
+
+
+
+</div>
+<div class="section" data-anchor="product" >
+  <div class="slide">
+        <img src="img/sec1.jpg"  alt="">
+    </div>
+    <div class="slide"  style="background-image: url('img/sec1_1.jpg');text-align: center; background-size: cover"  alt="">
+
+        <ul class="list">
+            <li>
+                <a href="#BeautyWater" class="panel" data-toggle="drop-panel">
+                    <img src="img/BeautyWater.jpg">
+                </a>
+                <div id="BeautyWater" class="cap-overlay hide">
+                  <div class="content">
+                  손앤박<br />
+                  뷰티워터<br /><br />
+                    <a href="javascript:void(0)" class="button small"><i class="icon-edit"></i> 상세페이지로 이동</a>
+                  </div>
+                </div>
+            </li>
+            <li><a href="#blooming" class="panel" data-toggle="drop-panel"><img src="img/blooming.jpg"></a>
+              <div id="blooming" class="cap-overlay hide">
+                <div class="content">
+               손앤박<br />
+                블루밍 립스틱 벨벳/모이스처<br /><br />
+                  <a href="javascript:void(0)" class="button small"><i class="icon-edit"></i> 상세페이지로 이동</a>
+                </div>
+              </div></li>
+            <li><a href="#bodycream" class="panel" data-toggle="drop-panel"><img src="img/bodycream.jpg"></a>
+              <div id="bodycream" class="cap-overlay hide">
+                <div class="content">
+                바디루틴<br />
+                모이스처 쉴드 바디크림<br /><br />
+                  <a href="javascript:void(0)" class="button small"><i class="icon-edit"></i> 상세페이지로 이동</a>
+                </div>
+              </div></li>
+            <li><a href="#bodylotion" class="panel" data-toggle="drop-panel"><img src="img/bodylotion.jpg"></a>
+              <div id="bodylotion" class="cap-overlay hide">
+                <div class="content">
+               바디루틴<br />
+                모이스처 쉴드 바디로션<br /><br />
+                  <a href="javascript:void(0)" class="button small"><i class="icon-edit"></i> 상세페이지로 이동</a>
+                </div>
+              </div></li>
+            <li><a href="#colortreatment" class="panel" data-toggle="drop-panel"><img src="img/colortreatment.jpg"></a>
+              <div id="colortreatment" class="cap-overlay hide">
+                <div class="content">
+              페인토즈<br />
+                컬러트리트먼트<br /><br />
+                  <a href="javascript:void(0)" class="button small"><i class="icon-edit"></i> 상세페이지로 이동</a>
+                </div>
+              </div></li>
+            <li><a href="#eyetrailer" class="panel" data-toggle="drop-panel"><img src="img/eyetrailer.jpg"></a>
+              <div id="eyetrailer" class="cap-overlay hide">
+                <div class="content">
+                   손앤박<br />
+                아이트레일러싱글<br /><br />
+                  <a href="javascript:void(0)" class="button small"><i class="icon-edit"></i> 상세페이지로 이동</a>
+                </div>
+              </div></li>
+            <li><a href="#glowringfoundation" class="panel" data-toggle="drop-panel"><img src="img/glowringfoundation.jpg"></a>
+              <div id="glowringfoundation" class="cap-overlay hide">
+                <div class="content">
+               손앤박<br />
+                글로우링 파운데이션<br /><br />
+                  <a href="javascript:void(0)" class="button small"><i class="icon-edit"></i> 상세페이지로 이동</a>
+                </div>
+              </div></li>
+            <li><a href="#taticker" class="panel" data-toggle="drop-panel"><img src="img/taticker.jpg"></a>
+              <div id="taticker" class="cap-overlay hide">
+                <div class="content">
+               페인토즈<br />
+                타티커<br /><br />
+                  <a href="javascript:void(0)" class="button small"><i class="icon-edit"></i> 상세페이지로 이동</a>
+                </div>
+              </div></li>
+            <li><a href="#twotone" class="panel" data-toggle="drop-panel"><img src="img/twotone.jpg"></a>
+              <div id="twotone" class="cap-overlay hide">
+                <div class="content">
+                페인토<br />
+                컬러트리트먼트 투톤키트<br /><br />
+                  <a href="javascript:void(0)" class="button small"><i class="icon-edit"></i> 상세페이지로 이동</a>
+                </div>
+              </div></li>
+            <li><a href="#ultimatecover" class="panel" data-toggle="drop-panel"><img src="img/ultimatecover.jpg"></a>
+              <div id="ultimatecover" class="cap-overlay hide">
+                <div class="content">
+                손앤박<br />
+                얼티메이트 커버<br> 스틱파운데이션<br /><br />
+                  <a href="javascript:void(0)" class="button small"><i class="icon-edit"></i> 상세페이지로 이동</a>
+                </div>
+              </div></li>
+
+        </ul>
+     <div class="slide">
+      <img src="img/sec1_2.jpg"   alt="">
+  </div>
+  <div class="slide">
+   <img src="img/sec1_3.jpg"   alt="">
+</div>
+
+
+</div>
+</div>
+
+
+
+		</div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+
+
+        //Scrolling
+        anchors:['main','profile','homepage','product'],
+        css3: true,
+        scrollingSpeed: 700,
+        autoScrolling: true,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: false,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        continuousHorizontal: false,
+        scrollHorizontally: false,
+        interlockedSlides: false,
+        dragAndMove: false,
+        offsetSections: false,
+        resetSliders: false,
+        fadingEffect: false,
+        normalScrollElements: '#element1, .element2',
+        scrollOverflow: false,
+        scrollOverflowReset: false,
+        scrollOverflowOptions: null,
+        touchSensitivity: 15,
+        normalScrollElementTouchThreshold: 5,
+        bigSectionsDestination: null,
+
+        //Accessibility
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
+
+        //Design
+        controlArrows: true,
+        verticalCentered: true,
+        sectionsColor : ['#e3dcdc', '#eee'],
+        paddingTop: '3em',
+        paddingBottom: '10px',
+        fixedElements: '#header, .footer',
+        responsiveWidth: 0,
+        responsiveHeight: 0,
+        responsiveSlides: false,
+        parallax: false,
+        parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+        //Custom selectors
+        sectionSelector: '.section',
+        slideSelector: '.slide',
+
+        lazyLoading: true,
+
+        //events
+        onLeave: function(index, nextIndex, direction){},
+        afterLoad: function(anchorLink, index){},
+        afterRender: function(){},
+        afterResize: function(){},
+        afterResponsive: function(isResponsive){},
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+    });
+});
+    $(window).load(function () {
+  $('[data-toggle=drop-panel]').hcaptions();
+});
+</script>
+  </body>
+</html>
