@@ -2,22 +2,22 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Portpolio</title>
+    <title></title>
 
-    <link rel="stylesheet" type="text/css" href="/vendors/css/jquery.fullpage.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/jquery.fullPage.min.css" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <script src="/vendors/js/jquery.hcaptions.js"></script>
+      <script src="jquery.hcaptions.js"></script>
   <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
-  <script src="/vendors/js/jquery.easings.min.js"></script>
+  <script src="vendors/jquery.easings.min.js"></script>
 
 
   <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
-  <script type="text/javascript" src="/vendors/js/scrolloverflow.min.js"></script>
+  <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
 
-  <script type="text/javascript" src="/vendors/js/jquery.fullpage.min.js"></script>
+  <script type="text/javascript" src="vendors/jquery.fullPage.min.js"></script>
 
-  <script src="/vendors/js/jquery.fullpage.extensions.min.js" charset="utf-8"></script>
+  <script src="vendors/jquery.fullpage.extensions.min.js" charset="utf-8"></script>
 <style media="screen">
 body{
   background: white;
@@ -30,6 +30,8 @@ body{
 }
 .slide{
   position: relative;
+   
+    
 }
 .fp-slides{
   position: absolute;
@@ -41,12 +43,12 @@ img{
             max-width:100%;
             height:auto;
 }
-    .list {position: relative;display: inline-block; width: 1571px;margin: 0 auto;}
+    .list {position: relative;display: inline-block; width: 1571px;margin: 0 auto; margin-top: 150px;}
 
-    .list li {list-style: none;float: left; text-align: center; }
-	.list li a {color:deeppink;}
+    .list li {list-style: none;float: left; text-align: }
+    .list li a {color:deeppink;}
 
-.list li img {float: left;margin: 15px; width: 280px;height: 280px;}
+.list li img {float: left;margin: 15px; width: 250px;height: 250px;}
 .cap-overlay{
   background-color: rgba(250, 250, 250, 0.8);
 }
@@ -72,7 +74,7 @@ img{
 
         <div class="section" >
 				<div class="slide">
-					  <img src="img/sec2.jpg"  alt="">
+					  <img src="img/sec2_1.jpg"  alt="">
 				</div>
 		</div>
 		<div class="section"  data-anchor="homepage">
@@ -121,7 +123,7 @@ img{
                   <span style="height:300px;padding-top:300px;display:inline-block; text-align: center;vertical-align: middle;" >
                   스포츠 브랜드 푸마 사이트를 퍼블리싱 하였습니다. <br>
                   디자인과 퍼플리싱은 100% 자체제작입니다.<br>
-                  <br>     <br>  <a href="https://yuyuring.github.io/puma/" style="text-decoration:none; font-size:20px; color:#000;margin-top:30px;"> 푸마 포트폴리오 사이트로 이동하기</a>
+                  <br>     <br>  <a href="https://yuyuring.github.io/gongcha/" style="text-decoration:none; font-size:20px; color:#000;margin-top:30px;"> 푸마 포트폴리오 사이트로 이동하기</a>
                   </span>
                 </div>
               </div>
@@ -136,9 +138,8 @@ img{
   <div class="slide">
         <img src="img/sec1.jpg"  alt="">
     </div>
-    <div class="slide"  style="background-image: url('img/sec1_1.jpg');text-align: center; background-size: cover"  alt="">
-
-         <ul class="list">
+    <div class="slide"  style="background-image: url('img/sec1_1.jpg');text-align: center; background-size: 95%; background-repeat: no-repeat; padding-bottom: 50px;  overflow: scroll;" alt="">
+        <ul class="list">
             <li>
                 <a href="#BeautyWater" class="panel" data-toggle="drop-panel">
                     <img src="img/BeautyWater.jpg">
@@ -217,7 +218,8 @@ img{
                   <a href="https://yuyuring.github.io/product/twotone.jpg" target=”_blank” style="text-decoration:none;" ><i class="icon-edit"></i> 상세페이지로 이동</a>
                 </div>
               </div></li>
-            <li><a href="#ultimatecover" class="panel" data-toggle="drop-panel"><img src="img/ultimatecover.jpg"></a>
+            
+                      <li><a href="#ultimatecover" class="panel" data-toggle="drop-panel"><img src="img/ultimatecover.jpg"></a>
               <div id="ultimatecover" class="cap-overlay hide">
                 <div class="content">
                 손앤박<br />
@@ -225,8 +227,57 @@ img{
                   <a href="https://yuyuring.github.io/product/ultimatecover.jpg" target=”_blank” style="text-decoration:none;" ><i class="icon-edit"></i> 상세페이지로 이동</a>
                 </div>
               </div></li>
+            
+            <li><a href="#balance band" class="panel" data-toggle="drop-panel"><img src="img/band.jpg"></a>
+              <div id="balance band" class="cap-overlay hide">
+                <div class="content">
+                다이어트학교<br />
+               발란스 밴드<br /><br />
+                  <a href="https://yuyuring.github.io/product/band.html" target=”_blank” style="text-decoration:none;" ><i class="icon-edit"></i> 상세페이지로 이동</a>
+                </div>
+              </div></li>
 
+                
+                <li><a href="#dancingbar" class="panel" data-toggle="drop-panel"><img src="img/dancing.jpg"></a>
+              <div id="dancingbar" class="cap-overlay hide">
+                <div class="content">
+                다이어트학교<br />
+               허리춤바<br /><br />
+                  <a href="https://yuyuring.github.io/product/dancingbar.html" target=”_blank” style="text-decoration:none;" ><i class="icon-edit"></i> 상세페이지로 이동</a>
+                </div>
+              </div></li>
+                   <li><a href="#slimbong" class="panel" data-toggle="drop-panel"><img src="img/slimbong.jpg"></a>
+              <div id="slimbong" class="cap-overlay hide">
+                <div class="content">
+                다이어트학교<br />
+                슬림봉<br /><br />
+                  <a href="https://yuyuring.github.io/product/slimbong.html" target=”_blank” style="text-decoration:none;" ><i class="icon-edit"></i> 상세페이지로 이동</a>
+                </div>
+              </div></li>
+                   <li><a href="#neck" class="panel" data-toggle="drop-panel"><img src="img/neck.jpg"></a>
+              <div id="neck" class="cap-overlay hide">
+                <div class="content">
+                다이어트학교<br />
+                풀어지넥<br /><br />
+                  <a href="https://yuyuring.github.io/product/neck.html" target=”_blank” style="text-decoration:none;" ><i class="icon-edit"></i> 상세페이지로 이동</a>
+                </div>
+              </div></li>
+            
+            
+                     <li><a href="#shake" class="panel" data-toggle="drop-panel"><img src="img/shake.jpg"></a>
+              <div id="shake" class="cap-overlay hide">
+                <div class="content">
+                다이어트학교<br />
+                크런치톡톡<br> 쉐이크<br /><br />
+                  <a href="https://yuyuring.github.io/product/shake.html" target=”_blank” style="text-decoration:none;" ><i class="icon-edit"></i> 상세페이지로 이동</a>
+                </div>
+              </div></li>
+         
+         
         </ul>
+</div>
+    
+    
      <div class="slide">
       <img src="img/sec1_2.jpg"   alt="">
   </div>
@@ -234,14 +285,21 @@ img{
    <img src="img/sec1_3.jpg"   alt="">
 </div>
 
-
+        
+     <div class="slide">
+      <img src="img/sec1_4.jpg"   alt="">
+  </div>
+  <div class="slide">
+   <img src="img/sec1_5.jpg"   alt="">
 </div>
+
+
 </div>
 
 
 
 		</div>
-</div>
+
 <script type="text/javascript">
   $(document).ready(function() {
     $('#fullpage').fullpage({
