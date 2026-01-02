@@ -2,7 +2,8 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - YuYuRing</title>
 
     <link rel="stylesheet" type="text/css" href="vendors/css/jquery.fullPage.min.css" />
 
@@ -30,8 +31,6 @@ body{
 }
 .slide{
   position: relative;
-   
-    
 }
 .fp-slides{
   position: absolute;
@@ -39,27 +38,134 @@ body{
 }
 
 img{
-
-            max-width:100%;
-            height:auto;
+  max-width:100%;
+  height:auto;
 }
-    .list {position: relative;display: inline-block; width: 1571px;margin: 0 auto; margin-top: 150px;}
 
-    .list li {list-style: none;float: left; text-align: }
-    .list li a {color:deeppink;}
+.list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1571px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
 
-.list li img {float: left;margin: 15px; width: 250px;height: 250px;}
+.list li {
+  list-style: none;
+  margin: 15px;
+  text-align: center;
+}
+
+.list li a {
+  color: deeppink;
+}
+
+.list li img {
+  width: 250px;
+  height: 250px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
 .cap-overlay{
-  background-color: rgba(250, 250, 250, 0.8);
+  background-color: rgba(250, 250, 250, 0.9);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+  z-index: 1000;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
+
 .cap-overlay .content{
   padding: 40px;
-    margin-top: 70px;
   font-weight: 700;
-    text-shadow: 100;
-    color: #000;
+  color: #000;
+  text-align: center;
+  line-height: 1.5;
 }
 
+/* 반응형 디자인 */
+@media screen and (max-width: 1200px) {
+  .list {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  
+  .list li img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .list {
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  
+  .list li {
+    margin: 10px;
+  }
+  
+  .list li img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .cap-overlay .content {
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .list li img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .list li {
+    margin: 8px;
+  }
+  
+  .cap-overlay .content {
+    padding: 15px;
+    font-size: 12px;
+  }
+}
+
+/* 슬라이드 배경 이미지 반응형 */
+.slide[style*="background-image"] {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+/* 숨김 클래스 */
+.hide {
+  display: none;
+}
+
+/* 오버레이가 표시될 때 */
+.cap-overlay:not(.hide) {
+  display: block;
+}
 </style>
   </head>
 
@@ -138,7 +244,7 @@ img{
   <div class="slide">
         <img src="img/sec1.jpg"  alt="">
     </div>
-    <div class="slide"  style="background-image: url('img/sec1_1.jpg');text-align: center; background-size: 95%; background-repeat: no-repeat; padding-bottom: 50px;  overflow: scroll;" alt="">
+    <div class="slide" style="background-image: url('img/sec1_1.jpg'); text-align: center; background-size: cover; background-position: center; background-repeat: no-repeat; padding: 20px; overflow-y: auto;" alt="">
         <ul class="list">
             <li>
                 <a href="#BeautyWater" class="panel" data-toggle="drop-panel">
@@ -301,10 +407,9 @@ img{
 		</div>
 
 <script type="text/javascript">
-  $(document).ready(function() {
+$(document).ready(function() {
+    // fullPage.js 초기화
     $('#fullpage').fullpage({
-
-
         //Scrolling
         anchors:['main','profile','homepage','product'],
         css3: true,
@@ -346,9 +451,9 @@ img{
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
-        responsiveWidth: 0,
+        responsiveWidth: 768, // 768px 이하에서 반응형 모드
         responsiveHeight: 0,
-        responsiveSlides: false,
+        responsiveSlides: true, // 슬라이드도 반응형으로
         parallax: false,
         parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
 
@@ -367,9 +472,50 @@ img{
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
+
+    // 커스텀 오버레이 기능 (hcaptions 대체)
+    $('[data-toggle=drop-panel]').on('click', function(e) {
+        e.preventDefault();
+        var targetId = $(this).attr('href');
+        var $overlay = $(targetId);
+        
+        if ($overlay.hasClass('hide')) {
+            // 모든 오버레이 숨기기
+            $('.cap-overlay').addClass('hide');
+            // 클릭된 오버레이 보이기
+            $overlay.removeClass('hide');
+        } else {
+            // 오버레이 숨기기
+            $overlay.addClass('hide');
+        }
+    });
+
+    // 오버레이 외부 클릭시 닫기
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.cap-overlay, [data-toggle=drop-panel]').length) {
+            $('.cap-overlay').addClass('hide');
+        }
+    });
+
+    // ESC 키로 오버레이 닫기
+    $(document).on('keydown', function(e) {
+        if (e.keyCode === 27) { // ESC key
+            $('.cap-overlay').addClass('hide');
+        }
+    });
 });
-    $(window).load(function () {
-  $('[data-toggle=drop-panel]').hcaptions();
+
+// 윈도우 로드 후 실행 (이미지 로딩 완료 후)
+$(window).on('load', function() {
+    // hcaptions 플러그인이 있는 경우에만 실행
+    if (typeof $.fn.hcaptions === 'function') {
+        try {
+            $('[data-toggle=drop-panel]').hcaptions();
+        } catch(e) {
+            console.log('hcaptions plugin error:', e);
+            // 플러그인 오류 시 커스텀 기능 사용
+        }
+    }
 });
 </script>
   </body>
